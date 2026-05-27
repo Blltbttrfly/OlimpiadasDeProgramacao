@@ -1,4 +1,5 @@
-#Questão 1 — Estoque de uma Farmácia
+# Equipe resolutora: Expressos Vermelhos de Monty
+# Integrantes: Aline, Denzel, Lay e Stefano#Questão 1 — Estoque de uma Farmácia
 
 #Lucas precisa organizar o estoque de sua nova farmácia e precisa de um programa que ajude ele com esse processo.
 
