@@ -1,3 +1,14 @@
+#Questão 1 — Estoque de uma Farmácia
+
+#Lucas precisa organizar o estoque de sua nova farmácia e precisa de um programa que ajude ele com esse processo.
+
+#Crie um programa de gerenciamento de estoque com as seguintes funções:
+
+#Cadastrar novo medicamento.
+#Vizualizar medicamentos em estoque.
+#Sair do sistema.
+
+
 medicamentos = [ 
     {"Nome": "Amoxicilina", "Preço": 45.90, "Quantidade em estoque": 120},
     {"Nome": "Ibuprofeno", "Preço": 18.50, "Quantidade em estoque": 85},
