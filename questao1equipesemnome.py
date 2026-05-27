@@ -51,5 +51,10 @@ if op == "1":
     medicamentos.append(cadastro_medicamento)
 
 if op == "2":
-        for medicamentos, preco in novo_medicamento_preco():
-            print(f"{medicamentos}: R$ {preco:.2f}")
+        for medicamento in medicamentos:
+            print(medicamento)
+
+if op == "0":
+    while True:
+        print("OBRIGADO PELA SUA ATENÇÃO")
+        break
