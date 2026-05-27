@@ -21,51 +21,51 @@ medicamentos = [
     {"Nome": "Cetoconazol Creme", "Preço": 24.15, "Quantidade em estoque": 40},
     {"Nome": "Azitromicina", "Preço": 33.00, "Quantidade em estoque": 75}
 ]
+while True:
+    print(f"""
+    ======= ESTOQUE DA FARMÁCIA ========
+        1. cadastra novo medicamento.
+        2. Vizualizar medicamentos em estoque.
+        
+        0. Sair do sistema.
+    ====================================
+    """)
+    op = input("Digite a opção que queira acessar: ")
 
-print(f"""
-======= ESTOQUE DA FARMÁCIA ========
-    1. cadastra novo medicamento.
-    2. Vizualizar medicamentos em estoque.
-    
-    0. Sair do sistema.
-====================================
-""")
-op = input("Digite a opção que queira acessar: ")
+    if op == "1":
+        while True:
+            print("== Cadastro de Medicamentos ==")
+            nome_novo_medicamento = input("Digite o nome do novo medicamento: ")
+            if len(nome_novo_medicamento) < 2:
+                print("Digite um nome com mais de 2 digitos!!!")
+            else:
+                break
+        while True:
+            novo_medicamento_preco = float(input("Digite o preço do novo medicamento: "))
+            if novo_medicamento_preco < 0:
+                print("Digite um preço válído")
+            else:
+                break
+        while True:
+            novo_medicamento_estoque = int(input("Digite a quatidade de medicamentos: "))
+            if novo_medicamento_estoque < 0:
+                print("Número inválido")
+            else:
+                break
 
-if op == "1":
-    while True:
-        print("== Cadastro de Medicamentos ==")
-        nome_novo_medicamento = input("Digite o nome do novo medicamento: ")
-        if len(nome_novo_medicamento) < 2:
-            print("Digite um nome com mais de 2 digitos!!!")
-        else:
+        cadastro_medicamento = {
+        "Nome":nome_novo_medicamento,
+        "Preço":novo_medicamento_preco,
+        "Quantidade em estoque":novo_medicamento_estoque
+        }
+
+        medicamentos.append(cadastro_medicamento)
+
+    if op == "2":
+            for medicamento in medicamentos:
+                print(medicamento)
+
+    if op == "0":
+        while True:
+            print("OBRIGADO PELA SUA ATENÇÃO")
             break
-    while True:
-        novo_medicamento_preco = float(input("Digite o preço do novo medicamento: "))
-        if novo_medicamento_preco < 0:
-            print("Digite um preço válído")
-        else:
-            break
-    while True:
-        novo_medicamento_estoque = int(input("Digite a quatidade de medicamentos: "))
-        if novo_medicamento_estoque < 0:
-            print("Número inválido")
-        else:
-            break
-
-    cadastro_medicamento = {
-    "Nome":nome_novo_medicamento,
-    "Preço":novo_medicamento_preco,
-    "Quantidade em estoque":novo_medicamento_estoque
-    }
-
-    medicamentos.append(cadastro_medicamento)
-
-if op == "2":
-        for medicamento in medicamentos:
-            print(medicamento)
-
-if op == "0":
-    while True:
-        print("OBRIGADO PELA SUA ATENÇÃO")
-        break
