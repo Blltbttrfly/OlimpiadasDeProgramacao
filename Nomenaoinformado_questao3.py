@@ -41,7 +41,7 @@ print(f"""
         
      Valor Total: R$ {valor_novo:.2f}
 
-        ------ Gorjeta do Garçom ------
+        ---- Gorjeta do Garçom ----
         {mens_gorjeta}.
         R$ {gorjeta:.2f}
 """)
