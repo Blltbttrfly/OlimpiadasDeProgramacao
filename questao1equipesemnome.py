@@ -42,11 +42,14 @@ if op == "1":
         else:
             break
 
-cadastro_medicamento = {
-"Nome":nome_novo_medicamento,
-"Preço":novo_medicamento_preco,
-"Quantidade em estoque":novo_medicamento_estoque
-}
+    cadastro_medicamento = {
+    "Nome":nome_novo_medicamento,
+    "Preço":novo_medicamento_preco,
+    "Quantidade em estoque":novo_medicamento_estoque
+    }
 
-medicamentos.append(cadastro_medicamento)
+    medicamentos.append(cadastro_medicamento)
 
+if op == "2":
+        for medicamentos, preco in novo_medicamento_preco():
+            print(f"{medicamentos}: R$ {preco:.2f}")
