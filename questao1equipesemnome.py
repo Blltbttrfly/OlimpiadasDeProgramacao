@@ -22,6 +22,7 @@ medicamentos = [
     {"Nome": "Azitromicina", "Preço": 33.00, "Quantidade em estoque": 75}
 ]
 while True:
+    
     print(f"""
     ======= ESTOQUE DA FARMÁCIA ========
         1. cadastra novo medicamento.
