@@ -1,4 +1,8 @@
+# Equipe resolutora: Expressos Vermelhos de Monty
+# Integrantes: Aline, Denzel, Lay e Stefano
+
 # Questão 2 — Banho de animais
+# Equipe: Nome não informado
 
 # Fernando precisava de um sistema que organizasse os preços de banho dos animais.
 
